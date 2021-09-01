@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eatsmart</groupId>
-	<artifactId>evolvfit</artifactId>
+	<artifactId>playground</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>evolvfit</name>
-	<description>EvolvFit Brains</description>
+	<name>playground</name>
+	<description>Springboot Playground - POCs</description>
 
 	<properties>
 		<java.version>1.8</java.version>

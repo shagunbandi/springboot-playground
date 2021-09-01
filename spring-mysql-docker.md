@@ -14,16 +14,16 @@ Install Docker on you machine and create a network
 
 Use MySQL Image published by Docker Hub (https://hub.docker.com/_/mysql/) Command to run the mysql container
 
-`$ docker container run --name mysqldb --network employee-mysql -e MYSQL_ROOT_PASSWORD=Welcome#123 -e MYSQL_DATABASE=evolv -e MYSQL_USER=shagunbandi -e MYSQL_PASSWORD=Welcome#123 -d mysql:8`
+`$ docker container run --name mysqldb --network employee-mysql -e MYSQL_ROOT_PASSWORD=Welcome#123 -e MYSQL_DATABASE=playground -e MYSQL_USER=shagunbandi -e MYSQL_PASSWORD=Welcome#123 -d mysql:8`
 
-Now we have a container running, with the name of mysqldb, root and user password as Welcome#123 and a new DB named evolv
+Now we have a container running, with the name of mysqldb, root and user password as Welcome#123 and a new DB named playground
 
 ## STEP 3
 
 Application.properties should look like this
 
 ```
-spring.datasource.url=jdbc:mysql://mysqldb:3306/evolv
+spring.datasource.url=jdbc:mysql://mysqldb:3306/playground
 spring.datasource.username=shagunbandi
 spring.datasource.password=Welcome#123
 spring.datasource.platform=mysql

@@ -10,8 +10,8 @@ mysql -u root -p
 
 create user 'shagunbandi'@'localhost' identified by 'Welcome#123'; 
 
-create database evolv;
+create database playground;
 
-grant all on evolv.* to 'shagunbandi'@'localhost'; 
+grant all on playground.* to 'shagunbandi'@'localhost'; 
 
 FLUSH PRIVILEGES;
