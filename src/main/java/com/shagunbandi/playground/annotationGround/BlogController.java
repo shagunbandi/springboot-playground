@@ -22,14 +22,16 @@ import lombok.extern.slf4j.Slf4j;
 public class BlogController {
 
 	@PostMapping
-	public String getMapping(@RequestBody BlogModel blog) {
-		
+	@LogExecutionTime(roles = { "User" })
+	public String getMapping(@RequestBody BlogModel blog, String user) {
+
+		System.out.println("Argument added from aspect: " + user);
 		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 		Validator validator = factory.getValidator();
 		Set<ConstraintViolation<BlogModel>> res = validator.validate(blog);
 		log.info(String.valueOf(res.isEmpty()));
 		return String.valueOf(res.isEmpty());
-		
+
 	}
 
 }

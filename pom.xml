@@ -9,7 +9,7 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.eatsmart</groupId>
+	<groupId>com.shagunbandi</groupId>
 	<artifactId>playground</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>playground</name>
@@ -20,6 +20,12 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- Annotation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 
 		<!-- Micro-Batching -->
 
